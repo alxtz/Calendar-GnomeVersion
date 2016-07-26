@@ -67,7 +67,30 @@ class CalendarViewPagerAdapter extends FragmentPagerAdapter
     @Override
     public Fragment getItem(int position)
     {
-        Fragment newCalendarPage = new CalendarFragment();
+        int giveMonth = 1;
+        int giveYear = 2015;
+
+        int monthsAfter2015_1 = position;
+
+        Log.d("FragmentLog","經過的月數為"+Integer.toString(monthsAfter2015_1));
+
+        giveMonth+=monthsAfter2015_1%12;
+        giveYear+=monthsAfter2015_1/12;
+
+        Log.d("FragmentLog","頁面為"+Integer.toString(giveYear)+"年"+Integer.toString(giveMonth)+"月");
+
+        int giveThisMonthLength = MONTH_LENGTH_LIST[giveMonth-1];
+        int giveLastMonthLength;
+        if(giveMonth-2==-1)
+        {
+            giveLastMonthLength = 31;
+        }
+        else
+        {
+            giveLastMonthLength = MONTH_LENGTH_LIST[giveMonth-2];
+        }
+
+        Fragment newCalendarPage = new CalendarFragment(giveYear , giveMonth , giveThisMonthLength , giveLastMonthLength);
 
         return newCalendarPage;
     }
@@ -274,4 +297,7 @@ class CalendarViewPagerAdapter extends FragmentPagerAdapter
                 return false;
             }
         }
+
+        //TODO 給入一個page起始的禮拜幾，跟天數
+        //TODO 要有 1.上個月的天數,這個月的天數,起始是禮拜幾
 }
