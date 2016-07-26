@@ -1,13 +1,17 @@
 package com.product.bj.calendar_gnomeversion;
 
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class CalendarFragment extends Fragment
@@ -69,7 +73,14 @@ public class CalendarFragment extends Fragment
             int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
             TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
             dateTextView.setText(Integer.toString(dateCount));
+            dateTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX , 15);
+            dateTextView.setTypeface(null, Typeface.BOLD);
             dateCount++;
+
+            IDName = "DayBlock"+i;
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout dayBlock = (RelativeLayout)useFragmentView.findViewById(resID);
+            dayBlock.setBackgroundColor(Color.parseColor("#FFFFFF"));
         }
 
         dateCount = 1;
@@ -81,7 +92,14 @@ public class CalendarFragment extends Fragment
             int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
             TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
             dateTextView.setText(Integer.toString(dateCount));
+            dateTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX , 12);
+            dateTextView.setTypeface(null, Typeface.ITALIC);
             dateCount++;
+
+            IDName = "DayBlock"+i;
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout dayBlock = (RelativeLayout)useFragmentView.findViewById(resID);
+            dayBlock.setBackgroundColor(Color.parseColor("#EEEEEE"));
         }
 
         dateCount = lastMonthLenth;
@@ -92,7 +110,14 @@ public class CalendarFragment extends Fragment
             int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
             TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
             dateTextView.setText(Integer.toString(dateCount));
+            dateTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX , 12);
+            dateTextView.setTypeface(null, Typeface.ITALIC);
             dateCount--;
+
+            IDName = "DayBlock"+i;
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout dayBlock = (RelativeLayout)useFragmentView.findViewById(resID);
+            dayBlock.setBackgroundColor(Color.parseColor("#EEEEEE"));
         }
     }
 
