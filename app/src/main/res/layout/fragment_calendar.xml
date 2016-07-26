@@ -43,7 +43,8 @@
                     android:id="@+id/textView5"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:textSize="30px" />
+                    android:textSize="30px"
+                    android:textColor="#ff5555" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -229,7 +230,8 @@
                     android:id="@+id/textView11"
                     android:textSize="30px"
                     android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#5d65ff" />
             </RelativeLayout>
         </TableRow>
 
@@ -239,7 +241,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="156px">
+                android:layout_height="156px"
+                android:background="#EEEEEE">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -250,15 +253,17 @@
                     android:background="#cccccc">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView12"
+                        android:id="@+id/DateText1"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#aa4848"
+                        android:textStyle="italic"
+                        android:textAlignment="center" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -280,6 +285,178 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_height="156px"
+                android:background="#EEEEEE">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText2"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#000000"
+                        android:textStyle="italic"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px"
+                android:background="#EEEEEE">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText3"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#000000"
+                        android:textStyle="italic"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px"
+                android:background="#EEEEEE">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText4"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#000000"
+                        android:textStyle="italic"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px"
+                android:background="#EEEEEE">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText5"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#000000"
+                        android:textStyle="italic"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="156px" >
 
                 <RelativeLayout
@@ -295,7 +472,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView13"
+                        android:id="@+id/DateText6"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -335,171 +512,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView14"
+                        android:id="@+id/DateText7"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView15"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView16"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView17"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView18"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -540,7 +557,47 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView19"
+                        android:id="@+id/DateText8"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#aa4848" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText9"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -580,7 +637,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView20"
+                        android:id="@+id/DateText10"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -620,7 +677,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView21"
+                        android:id="@+id/DateText11"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -660,7 +717,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView22"
+                        android:id="@+id/DateText12"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -700,7 +757,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView23"
+                        android:id="@+id/DateText13"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -740,51 +797,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView24"
+                        android:id="@+id/DateText14"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView25"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -825,7 +842,47 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView26"
+                        android:id="@+id/DateText15"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#aa4848" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText16"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -865,7 +922,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView27"
+                        android:id="@+id/DateText17"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -905,7 +962,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView28"
+                        android:id="@+id/DateText18"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -945,7 +1002,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView29"
+                        android:id="@+id/DateText19"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -985,7 +1042,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView30"
+                        android:id="@+id/DateText20"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1025,51 +1082,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView31"
+                        android:id="@+id/DateText21"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView32"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -1110,7 +1127,47 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView33"
+                        android:id="@+id/DateText22"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#aa4848" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText23"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1150,7 +1207,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView34"
+                        android:id="@+id/DateText24"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1190,7 +1247,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView35"
+                        android:id="@+id/DateText25"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1230,7 +1287,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView36"
+                        android:id="@+id/DateText26"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1270,7 +1327,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView37"
+                        android:id="@+id/DateText27"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1310,51 +1367,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView38"
+                        android:id="@+id/DateText28"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView39"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -1395,7 +1412,47 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView40"
+                        android:id="@+id/DateText29"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#aa4848" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156px" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText30"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1435,7 +1492,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView41"
+                        android:id="@+id/DateText31"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1475,7 +1532,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView42"
+                        android:id="@+id/DateText32"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1515,7 +1572,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView43"
+                        android:id="@+id/DateText33"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1555,7 +1612,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView44"
+                        android:id="@+id/DateText34"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1595,51 +1652,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView45"
+                        android:id="@+id/DateText35"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="156px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView46"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -1680,7 +1697,47 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView47"
+                        android:id="@+id/DateText36"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15px"
+                        android:textColor="#aa4848" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="159px" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#cccccc" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="26"
+                        android:id="@+id/DateText37"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1720,7 +1777,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView48"
+                        android:id="@+id/DateText38"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1760,7 +1817,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView49"
+                        android:id="@+id/DateText39"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1800,7 +1857,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView50"
+                        android:id="@+id/DateText40"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1840,7 +1897,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView51"
+                        android:id="@+id/DateText41"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
@@ -1880,51 +1937,11 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="26"
-                        android:id="@+id/textView52"
+                        android:id="@+id/DateText42"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#000000" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#000000" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="159px" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20px"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="26"
-                        android:id="@+id/textView53"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="15px"
-                        android:textColor="#000000" />
+                        android:textColor="#2a4367" />
                 </RelativeLayout>
 
                 <RelativeLayout

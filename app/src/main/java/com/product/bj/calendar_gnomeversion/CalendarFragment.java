@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class CalendarFragment extends Fragment
 {
@@ -17,10 +18,14 @@ public class CalendarFragment extends Fragment
     {
         View returnCalendarFragment = inflater.inflate(R.layout.fragment_calendar , container , false);
 
+        useFragmentView = returnCalendarFragment;
+
+        setDayBlockDate();
+
         return returnCalendarFragment;
     }
 
-    public CalendarFragment(int inputYear , int inputMonth , int inputThisMonthLength , int inputLastMonthLength)
+    public CalendarFragment(int inputYear , int inputMonth , int inputThisMonthLength , int inputLastMonthLength , int inputWhatDay)
     {
         useMonth = inputMonth;
         useYear = inputYear;
@@ -28,9 +33,14 @@ public class CalendarFragment extends Fragment
         thisMonthLenth = inputThisMonthLength;
         lastMonthLenth = inputLastMonthLength;
 
+        whatDay = inputWhatDay;
+
+        Log.d("FragmentLog","--------------------");
         Log.d("FragmentLog","我的年月為"+Integer.toString(useYear)+"年"+Integer.toString(useMonth)+"月!");
         Log.d("FragmentLog","我的本月天數為"+Integer.toString(thisMonthLenth));
         Log.d("FragmentLog","我的上個月天數為"+Integer.toString(lastMonthLenth));
+        Log.d("FragmentLog","我的這個月初為禮拜"+Integer.toString(whatDay));
+        Log.d("FragmentLog","--------------------");
     }
 
     int useYear;
@@ -39,6 +49,51 @@ public class CalendarFragment extends Fragment
     int thisMonthLenth;
     int lastMonthLenth;
 
+    //本月初是幾號
+    int whatDay;
+
     //TODO 要根據上個月,這個月的天數,以及1號是禮拜幾來排月曆
+    //使用的findViewByID所使用的View
+    View useFragmentView;
+
+    private void setDayBlockDate()
+    {
+        //設定這個月的日期
+        int startDateBlockNum = whatDay+1;
+
+        int dateCount = 1;
+
+        for(int i=startDateBlockNum; i<startDateBlockNum+thisMonthLenth; ++i)
+        {
+            String IDName = "DateText"+i;
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
+            dateTextView.setText(Integer.toString(dateCount));
+            dateCount++;
+        }
+
+        dateCount = 1;
+
+        //設定下個月的日期
+        for(int i=startDateBlockNum+thisMonthLenth; i<=42; ++i)
+        {
+            String IDName = "DateText"+i;
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
+            dateTextView.setText(Integer.toString(dateCount));
+            dateCount++;
+        }
+
+        dateCount = lastMonthLenth;
+        //設定上個月的日期
+        for(int i=startDateBlockNum-1; i>0; --i)
+        {
+            String IDName = "DateText"+i;
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            TextView dateTextView = (TextView)useFragmentView.findViewById(resID);
+            dateTextView.setText(Integer.toString(dateCount));
+            dateCount--;
+        }
+    }
 
 }

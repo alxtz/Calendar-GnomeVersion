@@ -90,7 +90,12 @@ class CalendarViewPagerAdapter extends FragmentPagerAdapter
             giveLastMonthLength = MONTH_LENGTH_LIST[giveMonth-2];
         }
 
-        Fragment newCalendarPage = new CalendarFragment(giveYear , giveMonth , giveThisMonthLength , giveLastMonthLength);
+        int daysAfter = countDaysAfter2015_1_1(giveYear,giveMonth);
+        Log.d("DebugLog",Integer.toString(giveYear)+"年"+Integer.toString(giveMonth)+"月後過了"+Integer.toString(daysAfter)+"天");
+
+        int giveWhatDay = (daysAfter+DAY_2015_1_1)%7;
+
+        Fragment newCalendarPage = new CalendarFragment(giveYear , giveMonth , giveThisMonthLength , giveLastMonthLength , giveWhatDay);
 
         return newCalendarPage;
     }
@@ -283,6 +288,45 @@ class CalendarViewPagerAdapter extends FragmentPagerAdapter
                 Log.d("CalendarLog", "在" + useYear + "年" + (useMonth - 1) + "月底時，過了" + daysAfter2015_1_1 + "天");
             }
 
+        }
+
+        private int countDaysAfter2015_1_1(int inputYear , int inputMonth)
+        {
+            int returnDays = 0;
+            for(int i = 2015; i<inputYear; ++i)
+            {
+                if(isLeap(i)==true)
+                {
+                    returnDays+=366;
+                }
+                else
+                {
+                    returnDays+=365;
+                }
+            }
+
+            for(int i = 0; i<inputMonth-1; ++i)
+            {
+                if(i==1)
+                {
+                    if(isLeap(inputYear)==true)
+                    {
+                        returnDays+=29;
+                    }
+                    else
+                    {
+                        returnDays+=28;
+                    }
+                }
+                else
+                {
+                    returnDays+=MONTH_LENGTH_LIST[i];
+                }
+
+                Log.d( "DebugLog1" , Integer.toString(i+1)+"月有"+MONTH_LENGTH_LIST[i]+"天");
+            }
+
+            return returnDays;
         }
 
         //TODO 偵測是否閏年
