@@ -244,7 +244,6 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:background="#EEEEEE"
                 android:id="@+id/DayBlock1">
 
                 <RelativeLayout
@@ -253,7 +252,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#cccccc">
+                    android:background="#cccccc" >
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -263,18 +262,60 @@
                         android:id="@+id/DateText1"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:textSize="12px"
-                        android:textColor="#aa4848"
-                        android:textStyle="italic"
-                        android:textAlignment="center" />
+                        android:textSize="15px"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible"
+                    android:id="@+id/DayBlock1Border1" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    android:id="@+id/DayBlock1Border2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout3"
+                    android:layout_toLeftOf="@+id/relativeLayout4"
+                    android:layout_toStartOf="@+id/relativeLayout4"
+                    android:visibility="invisible"
+                    android:id="@+id/DayBlock1Border3" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout4"
+                    android:layout_toStartOf="@+id/relativeLayout4"
+                    android:visibility="invisible"
+                    android:id="@+id/DayBlock1Border4" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000"></RelativeLayout>
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout3" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -282,14 +323,13 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000"></RelativeLayout>
-
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout4" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:background="#EEEEEE"
                 android:id="@+id/DayBlock2">
 
                 <RelativeLayout
@@ -308,18 +348,56 @@
                         android:id="@+id/DateText2"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:textSize="12px"
+                        android:textSize="15px"
                         android:textColor="#000000"
-                        android:textStyle="italic"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout6"
+                    android:layout_toLeftOf="@+id/relativeLayout7"
+                    android:layout_toStartOf="@+id/relativeLayout7"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout7"
+                    android:layout_toStartOf="@+id/relativeLayout7"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout6" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -327,13 +405,13 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout7" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:background="#EEEEEE"
                 android:id="@+id/DayBlock3">
 
                 <RelativeLayout
@@ -352,18 +430,56 @@
                         android:id="@+id/DateText3"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:textSize="12px"
+                        android:textSize="15px"
                         android:textColor="#000000"
-                        android:textStyle="italic"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout9"
+                    android:layout_toLeftOf="@+id/relativeLayout10"
+                    android:layout_toStartOf="@+id/relativeLayout10"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout10"
+                    android:layout_toStartOf="@+id/relativeLayout10"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout9" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -371,13 +487,13 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout10" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:background="#EEEEEE"
                 android:id="@+id/DayBlock4">
 
                 <RelativeLayout
@@ -396,18 +512,56 @@
                         android:id="@+id/DateText4"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:textSize="12px"
+                        android:textSize="15px"
                         android:textColor="#000000"
-                        android:textStyle="italic"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout12"
+                    android:layout_toLeftOf="@+id/relativeLayout13"
+                    android:layout_toStartOf="@+id/relativeLayout13"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout13"
+                    android:layout_toStartOf="@+id/relativeLayout13"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout12" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -415,13 +569,13 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout13" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:background="#EEEEEE"
                 android:id="@+id/DayBlock5">
 
                 <RelativeLayout
@@ -440,18 +594,56 @@
                         android:id="@+id/DateText5"
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
-                        android:textSize="12px"
+                        android:textSize="15px"
                         android:textColor="#000000"
-                        android:textStyle="italic"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout15"
+                    android:layout_toLeftOf="@+id/relativeLayout16"
+                    android:layout_toStartOf="@+id/relativeLayout16"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout16"
+                    android:layout_toStartOf="@+id/relativeLayout16"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout15" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -459,7 +651,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout16" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -490,11 +683,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout18"
+                    android:layout_toLeftOf="@+id/relativeLayout19"
+                    android:layout_toStartOf="@+id/relativeLayout19"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout19"
+                    android:layout_toStartOf="@+id/relativeLayout19"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout18" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -502,7 +733,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout19" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -527,17 +759,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout21"
+                    android:layout_toLeftOf="@+id/relativeLayout22"
+                    android:layout_toStartOf="@+id/relativeLayout22"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout22"
+                    android:layout_toStartOf="@+id/relativeLayout22"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout21" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -545,7 +815,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout22" />
             </RelativeLayout>
         </TableRow>
 
@@ -557,7 +828,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock8">
+                android:id="@+id/DayBlock8" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -576,17 +847,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#aa4848"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout"
+                    android:layout_toLeftOf="@+id/relativeLayout2"
+                    android:layout_toStartOf="@+id/relativeLayout2"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout2"
+                    android:layout_toStartOf="@+id/relativeLayout2"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -594,13 +903,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout2" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock9">
+                android:id="@+id/DayBlock9" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -630,7 +940,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:background="#f75c5c"></RelativeLayout>
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -639,23 +950,26 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true" />
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:background="#f75c5c"
-                    android:layout_above="@+id/relativeLayout"
-                    android:layout_toLeftOf="@+id/relativeLayout2"
-                    android:layout_toStartOf="@+id/relativeLayout2" />
+                    android:layout_above="@+id/relativeLayout25"
+                    android:layout_toLeftOf="@+id/relativeLayout26"
+                    android:layout_toStartOf="@+id/relativeLayout26"
+                    android:visibility="invisible" />
 
                 <RelativeLayout
                     android:layout_width="3px"
                     android:layout_height="match_parent"
                     android:background="#f75c5c"
                     android:layout_alignParentTop="true"
-                    android:layout_toLeftOf="@+id/relativeLayout2"
-                    android:layout_toStartOf="@+id/relativeLayout2" />
+                    android:layout_toLeftOf="@+id/relativeLayout26"
+                    android:layout_toStartOf="@+id/relativeLayout26"
+                    android:visibility="invisible" />
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
@@ -663,7 +977,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:background="#000000"
-                    android:id="@+id/relativeLayout" />
+                    android:id="@+id/relativeLayout25" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -672,13 +986,13 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:background="#000000"
-                    android:id="@+id/relativeLayout2" />
+                    android:id="@+id/relativeLayout26" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock10">
+                android:id="@+id/DayBlock10" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -703,11 +1017,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout28"
+                    android:layout_toLeftOf="@+id/relativeLayout29"
+                    android:layout_toStartOf="@+id/relativeLayout29"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout29"
+                    android:layout_toStartOf="@+id/relativeLayout29"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout28" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -715,13 +1067,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout29" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock11">
+                android:id="@+id/DayBlock11" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -729,7 +1082,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#cccccc" >
+                    android:background="#cccccc">
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -746,11 +1099,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout31"
+                    android:layout_toLeftOf="@+id/relativeLayout32"
+                    android:layout_toStartOf="@+id/relativeLayout32"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout32"
+                    android:layout_toStartOf="@+id/relativeLayout32"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout31" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -758,13 +1149,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout32" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock12">
+                android:id="@+id/DayBlock12" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -789,11 +1181,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout34"
+                    android:layout_toLeftOf="@+id/relativeLayout35"
+                    android:layout_toStartOf="@+id/relativeLayout35"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout35"
+                    android:layout_toStartOf="@+id/relativeLayout35"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout34" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -801,13 +1231,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout35" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock13">
+                android:id="@+id/DayBlock13" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -832,11 +1263,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout37"
+                    android:layout_toLeftOf="@+id/relativeLayout38"
+                    android:layout_toStartOf="@+id/relativeLayout38"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout38"
+                    android:layout_toStartOf="@+id/relativeLayout38"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout37" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -844,13 +1313,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout38" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock14">
+                android:id="@+id/DayBlock14" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -869,17 +1339,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout40"
+                    android:layout_toLeftOf="@+id/relativeLayout41"
+                    android:layout_toStartOf="@+id/relativeLayout41"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout41"
+                    android:layout_toStartOf="@+id/relativeLayout41"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout40" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -887,7 +1395,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout41" />
             </RelativeLayout>
         </TableRow>
 
@@ -899,7 +1408,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock15">
+                android:id="@+id/DayBlock15" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -918,17 +1427,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#aa4848"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout5"
+                    android:layout_toLeftOf="@+id/relativeLayout8"
+                    android:layout_toStartOf="@+id/relativeLayout8"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout8"
+                    android:layout_toStartOf="@+id/relativeLayout8"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout5" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -936,13 +1483,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout8" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock16">
+                android:id="@+id/DayBlock16" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -967,11 +1515,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout14"
+                    android:layout_toLeftOf="@+id/relativeLayout17"
+                    android:layout_toStartOf="@+id/relativeLayout17"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout17"
+                    android:layout_toStartOf="@+id/relativeLayout17"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout14" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -979,13 +1565,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout17" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock17">
+                android:id="@+id/DayBlock17" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1010,11 +1597,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout23"
+                    android:layout_toLeftOf="@+id/relativeLayout43"
+                    android:layout_toStartOf="@+id/relativeLayout43"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout43"
+                    android:layout_toStartOf="@+id/relativeLayout43"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout23" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1022,13 +1647,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout43" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock18">
+                android:id="@+id/DayBlock18" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1053,11 +1679,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout45"
+                    android:layout_toLeftOf="@+id/relativeLayout46"
+                    android:layout_toStartOf="@+id/relativeLayout46"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout46"
+                    android:layout_toStartOf="@+id/relativeLayout46"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout45" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1065,13 +1729,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout46" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock19">
+                android:id="@+id/DayBlock19" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1096,11 +1761,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout48"
+                    android:layout_toLeftOf="@+id/relativeLayout49"
+                    android:layout_toStartOf="@+id/relativeLayout49"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout49"
+                    android:layout_toStartOf="@+id/relativeLayout49"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout48" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1108,13 +1811,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout49" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock20">
+                android:id="@+id/DayBlock20" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1139,11 +1843,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout51"
+                    android:layout_toLeftOf="@+id/relativeLayout52"
+                    android:layout_toStartOf="@+id/relativeLayout52"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout52"
+                    android:layout_toStartOf="@+id/relativeLayout52"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout51" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1151,13 +1893,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout52" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock21">
+                android:id="@+id/DayBlock21" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1176,17 +1919,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout54"
+                    android:layout_toLeftOf="@+id/relativeLayout55"
+                    android:layout_toStartOf="@+id/relativeLayout55"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout55"
+                    android:layout_toStartOf="@+id/relativeLayout55"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout54" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1194,7 +1975,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout55" />
             </RelativeLayout>
         </TableRow>
 
@@ -1206,7 +1988,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock22">
+                android:id="@+id/DayBlock22" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1225,17 +2007,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#aa4848"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout57"
+                    android:layout_toLeftOf="@+id/relativeLayout58"
+                    android:layout_toStartOf="@+id/relativeLayout58"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout58"
+                    android:layout_toStartOf="@+id/relativeLayout58"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout57" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1243,13 +2063,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout58" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock23">
+                android:id="@+id/DayBlock23" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1274,11 +2095,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout60"
+                    android:layout_toLeftOf="@+id/relativeLayout61"
+                    android:layout_toStartOf="@+id/relativeLayout61"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout61"
+                    android:layout_toStartOf="@+id/relativeLayout61"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout60" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1286,13 +2145,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout61" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock24">
+                android:id="@+id/DayBlock24" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1317,11 +2177,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout63"
+                    android:layout_toLeftOf="@+id/relativeLayout64"
+                    android:layout_toStartOf="@+id/relativeLayout64"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout64"
+                    android:layout_toStartOf="@+id/relativeLayout64"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout63" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1329,13 +2227,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout64" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock25">
+                android:id="@+id/DayBlock25" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1360,11 +2259,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout66"
+                    android:layout_toLeftOf="@+id/relativeLayout67"
+                    android:layout_toStartOf="@+id/relativeLayout67"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout67"
+                    android:layout_toStartOf="@+id/relativeLayout67"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout66" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1372,13 +2309,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout67" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock26">
+                android:id="@+id/DayBlock26" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1403,11 +2341,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout69"
+                    android:layout_toLeftOf="@+id/relativeLayout70"
+                    android:layout_toStartOf="@+id/relativeLayout70"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout70"
+                    android:layout_toStartOf="@+id/relativeLayout70"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout69" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1415,13 +2391,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout70" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock27">
+                android:id="@+id/DayBlock27" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1446,11 +2423,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout72"
+                    android:layout_toLeftOf="@+id/relativeLayout73"
+                    android:layout_toStartOf="@+id/relativeLayout73"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout73"
+                    android:layout_toStartOf="@+id/relativeLayout73"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout72" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1458,13 +2473,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout73" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock28">
+                android:id="@+id/DayBlock28" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1483,17 +2499,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout75"
+                    android:layout_toLeftOf="@+id/relativeLayout76"
+                    android:layout_toStartOf="@+id/relativeLayout76"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout76"
+                    android:layout_toStartOf="@+id/relativeLayout76"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout75" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1501,7 +2555,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout76" />
             </RelativeLayout>
         </TableRow>
 
@@ -1513,7 +2568,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock29">
+                android:id="@+id/DayBlock29" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1532,17 +2587,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#aa4848"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout78"
+                    android:layout_toLeftOf="@+id/relativeLayout79"
+                    android:layout_toStartOf="@+id/relativeLayout79"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout79"
+                    android:layout_toStartOf="@+id/relativeLayout79"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout78" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1550,13 +2643,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout79" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock30">
+                android:id="@+id/DayBlock30" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1581,11 +2675,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout81"
+                    android:layout_toLeftOf="@+id/relativeLayout82"
+                    android:layout_toStartOf="@+id/relativeLayout82"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout82"
+                    android:layout_toStartOf="@+id/relativeLayout82"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout81" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1593,13 +2725,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout82" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock31">
+                android:id="@+id/DayBlock31" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1624,11 +2757,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout84"
+                    android:layout_toLeftOf="@+id/relativeLayout85"
+                    android:layout_toStartOf="@+id/relativeLayout85"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout85"
+                    android:layout_toStartOf="@+id/relativeLayout85"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout84" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1636,13 +2807,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout85" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock32">
+                android:id="@+id/DayBlock32" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1667,11 +2839,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout87"
+                    android:layout_toLeftOf="@+id/relativeLayout88"
+                    android:layout_toStartOf="@+id/relativeLayout88"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout88"
+                    android:layout_toStartOf="@+id/relativeLayout88"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout87" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1679,13 +2889,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout88" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock33">
+                android:id="@+id/DayBlock33" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1710,11 +2921,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout90"
+                    android:layout_toLeftOf="@+id/relativeLayout91"
+                    android:layout_toStartOf="@+id/relativeLayout91"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout91"
+                    android:layout_toStartOf="@+id/relativeLayout91"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout90" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1722,13 +2971,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout91" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock34">
+                android:id="@+id/DayBlock34" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1753,11 +3003,49 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout93"
+                    android:layout_toLeftOf="@+id/relativeLayout94"
+                    android:layout_toStartOf="@+id/relativeLayout94"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout94"
+                    android:layout_toStartOf="@+id/relativeLayout94"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout93" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1765,13 +3053,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout94" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="156px"
-                android:id="@+id/DayBlock35">
+                android:id="@+id/DayBlock35" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1790,17 +3079,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout96"
+                    android:layout_toLeftOf="@+id/relativeLayout97"
+                    android:layout_toStartOf="@+id/relativeLayout97"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout97"
+                    android:layout_toStartOf="@+id/relativeLayout97"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout96" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1808,7 +3135,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout97" />
             </RelativeLayout>
         </TableRow>
 
@@ -1820,7 +3148,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock36">
+                android:id="@+id/DayBlock36" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1839,17 +3167,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#aa4848"
+                        android:textColor="#000000"
                         android:textAlignment="center"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout99"
+                    android:layout_toLeftOf="@+id/relativeLayout100"
+                    android:layout_toStartOf="@+id/relativeLayout100"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout100"
+                    android:layout_toStartOf="@+id/relativeLayout100"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout99" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1857,13 +3223,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout100" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock37">
+                android:id="@+id/DayBlock37" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1883,15 +3250,54 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
                         android:textColor="#000000"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout102"
+                    android:layout_toLeftOf="@+id/relativeLayout103"
+                    android:layout_toStartOf="@+id/relativeLayout103"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout103"
+                    android:layout_toStartOf="@+id/relativeLayout103"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout102" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1899,13 +3305,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout103" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock38">
+                android:id="@+id/DayBlock38" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1925,15 +3332,54 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
                         android:textColor="#000000"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout105"
+                    android:layout_toLeftOf="@+id/relativeLayout106"
+                    android:layout_toStartOf="@+id/relativeLayout106"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout106"
+                    android:layout_toStartOf="@+id/relativeLayout106"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout105" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1941,13 +3387,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout106" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock39">
+                android:id="@+id/DayBlock39" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1967,15 +3414,54 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
                         android:textColor="#000000"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout108"
+                    android:layout_toLeftOf="@+id/relativeLayout109"
+                    android:layout_toStartOf="@+id/relativeLayout109"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout109"
+                    android:layout_toStartOf="@+id/relativeLayout109"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout108" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -1983,13 +3469,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout109" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock40">
+                android:id="@+id/DayBlock40" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -2009,15 +3496,54 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
                         android:textColor="#000000"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout111"
+                    android:layout_toLeftOf="@+id/relativeLayout112"
+                    android:layout_toStartOf="@+id/relativeLayout112"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout112"
+                    android:layout_toStartOf="@+id/relativeLayout112"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout111" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -2025,13 +3551,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout112" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock41">
+                android:id="@+id/DayBlock41" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -2051,15 +3578,54 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
                         android:textColor="#000000"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout114"
+                    android:layout_toLeftOf="@+id/relativeLayout115"
+                    android:layout_toStartOf="@+id/relativeLayout115"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout115"
+                    android:layout_toStartOf="@+id/relativeLayout115"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout114" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -2067,13 +3633,14 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout115" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="159px"
-                android:id="@+id/DayBlock42">
+                android:id="@+id/DayBlock42" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -2092,16 +3659,55 @@
                         android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:textSize="15px"
-                        android:textColor="#2a4367"
-                        android:textAlignment="center" />
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f75c5c"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="#f75c5c"
+                    android:layout_above="@+id/relativeLayout117"
+                    android:layout_toLeftOf="@+id/relativeLayout118"
+                    android:layout_toStartOf="@+id/relativeLayout118"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#f75c5c"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout118"
+                    android:layout_toStartOf="@+id/relativeLayout118"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="1px"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout117" />
 
                 <RelativeLayout
                     android:layout_width="1px"
@@ -2109,7 +3715,8 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:background="#000000" />
+                    android:background="#000000"
+                    android:id="@+id/relativeLayout118" />
             </RelativeLayout>
         </TableRow>
 

@@ -26,6 +26,9 @@ public class CalendarFragment extends Fragment
 
         setDayBlockDate();
 
+        //TODO 設定可以focus
+        setDayBlockClickable();
+
         return returnCalendarFragment;
     }
 
@@ -119,6 +122,35 @@ public class CalendarFragment extends Fragment
             RelativeLayout dayBlock = (RelativeLayout)useFragmentView.findViewById(resID);
             dayBlock.setBackgroundColor(Color.parseColor("#EEEEEE"));
         }
+    }
+
+    //TODO 設定當某個dayBlock被按到時，展示紅框
+    private void setDayBlockClickable()
+    {
+        RelativeLayout dayblock = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1);
+
+        dayblock.setOnClickListener
+        (
+            new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Log.d("ClickLog","Clicked!");
+                    RelativeLayout border1 = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1Border1);
+                    border1.setVisibility(View.VISIBLE);
+                    RelativeLayout border2 = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1Border2);
+                    border2.setVisibility(View.VISIBLE);
+                    RelativeLayout border3 = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1Border3);
+                    border3.setVisibility(View.VISIBLE);
+                    RelativeLayout border4 = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1Border4);
+                    border4.setVisibility(View.VISIBLE);
+                }
+            }
+        );
+
+        
+
     }
 
 }
