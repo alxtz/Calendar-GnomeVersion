@@ -125,8 +125,10 @@ public class CalendarFragment extends Fragment
     }
 
     //TODO 設定當某個dayBlock被按到時，展示紅框
+
     private void setDayBlockClickable()
     {
+        /*
         RelativeLayout dayblock = (RelativeLayout)useFragmentView.findViewById(R.id.DayBlock1);
 
         dayblock.setOnClickListener
@@ -148,9 +150,97 @@ public class CalendarFragment extends Fragment
                 }
             }
         );
+        */
 
-        
+        for(int i=1; i<=42; ++i)
+        {
+            String IDName = "DayBlock"+i;
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout dayblock = (RelativeLayout)useFragmentView.findViewById(resID);
+            final int giveInt = i;
+            dayblock.setOnClickListener
+            (
+                new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Log.d("FragmentLog","DayBlock"+giveInt+" Clicked!");
+                        IntToPass = giveInt;
+                        setFocusBlock(giveInt);
+                    }
+                }
+            );
+        }
+    }
 
+    int IntToPass;
+    int currentFocusBlock = -1;
+
+    private void setFocusBlock(int inputBlockNum)
+    {
+        //TODO 如果現在focus的跟點擊的一樣的話，就把邊框取消，currentFocus改成-1
+        if(currentFocusBlock==inputBlockNum)
+        {
+            String IDName = "DayBlock"+inputBlockNum+"Border1";
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.INVISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border2";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.INVISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border3";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.INVISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border4";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.INVISIBLE);
+            currentFocusBlock=-1;
+        }
+        else
+        {
+            if(currentFocusBlock!=-1)
+            {
+                String IDName = "DayBlock"+currentFocusBlock+"Border1";
+                int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+                RelativeLayout border = (RelativeLayout)useFragmentView.findViewById(resID);
+                border.setVisibility(View.INVISIBLE);
+                IDName = "DayBlock"+currentFocusBlock+"Border2";
+                resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+                border = (RelativeLayout)useFragmentView.findViewById(resID);
+                border.setVisibility(View.INVISIBLE);
+                IDName = "DayBlock"+currentFocusBlock+"Border3";
+                resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+                border = (RelativeLayout)useFragmentView.findViewById(resID);
+                border.setVisibility(View.INVISIBLE);
+                IDName = "DayBlock"+currentFocusBlock+"Border4";
+                resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+                border = (RelativeLayout)useFragmentView.findViewById(resID);
+                border.setVisibility(View.INVISIBLE);
+            }
+
+            String IDName = "DayBlock"+inputBlockNum+"Border1";
+            int resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            RelativeLayout border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.VISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border2";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.VISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border3";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.VISIBLE);
+            IDName = "DayBlock"+inputBlockNum+"Border4";
+            resID = useFragmentView.getResources().getIdentifier(IDName,"id",getActivity().getPackageName());
+            border = (RelativeLayout)useFragmentView.findViewById(resID);
+            border.setVisibility(View.VISIBLE);
+
+            currentFocusBlock=inputBlockNum;
+        }
     }
 
 }
